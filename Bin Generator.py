@@ -12,16 +12,16 @@ generated_Bins = []
 
 class gen_Bin:
     def Mastercard(self):
-        generated_Bins.append(rstr.xeger(str(5) + "\d{5}"))
-
+        generated_Bins.append(rstr.xeger(str(5) + r"\d{5}")) 
+        
     def Visa(self):
-        generated_Bins.append(rstr.xeger(str(4) + "\d{5}"))
+        generated_Bins.append(rstr.xeger(str(4) + r"\d{5}"))
 
     def Amex(self):
-        generated_Bins.append(rstr.xeger(str(3) + "\d{5}"))
+        generated_Bins.append(rstr.xeger(str(3) + r"\d{5}"))
 
     def Discover(self):
-        generated_Bins.append(rstr.xeger(str(6) + "\d{5}"))
+        generated_Bins.append(rstr.xeger(str(6) + r"\d{5}"))
 
 
 def check_Bin(Bin):
